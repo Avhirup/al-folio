@@ -1,23 +1,26 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title: <strong>Avhirup</strong> Chakraborty
+description: <a href="">Research Scientist @ Arya.ai</a> Minimalist. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: avhirup.jpg
 
 news: true
 social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am excited about computer science, primarily work with making intelligent systems.<br>
+I work as a **Research Scientist** @ Arya.ai. We help financial institutes to help automate decision making tasks from underwriting, life insurances, health claims etc.<br>
+I also spent time at **IIT Madras** as a Project Associate, where I worked on user controlled image inpainting. Our approach was based on Conditional WGAN.My internship @ Caterpillar India Pvt Ltd was focussed on multiple topics, object localisation in machine drawings, and generating images from text.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+> Skills
+> * Deep Learning - Tensorflow,Keras,Pytorch
+> * Visualisation - Plotly, Matplotlib, Seaborn,D3.js
+> * Scientific tools - Pandas, sklearn
+> * Elasticsearch, Dask, Sanic
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+ 
