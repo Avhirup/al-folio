@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Query Understanding
-description: Query Understanding Module for Embibe Search
+description: 
 img: 
 published: true
 
