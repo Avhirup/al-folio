@@ -1,57 +1,53 @@
 ---
 layout: page
-title: Project 2
-description: a project with a background image
-img: /assets/img/2.jpg
-published: false
+title: Query Understanding
+description: Query Understanding Module for Embibe Search
+img: 
+published: true
 
 ---
 
-Every project has a beautiful feature shocase page. It's easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.
+**Query understanding** is the process of inferring the intent of a user by extracting semantic meaning from the searcher’s keywords. At Embibe, students use search to either learn a new topic, examine their skills about a topic or find articles related to a topic. To serve students better, we classify their intent to LEARN, EXAMINE, or INFO. We also find entities from their query to refine our search space.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+For the query **“inverse of matrix practice”**, the user wants to test their skills on the chapter of *“the inverse of a matrix”*. Therefore, the intent is to *EXAMINE* & detected entities are (“inverse of a matrix”, chapter).
 
-    ---
-    layout: page
-    title: Project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-
-<div class="img_row">
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/1.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/2.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/3.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="img_row">
-    <img class="col three left" src="{{ site.baseurl }}/assets/img/5.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images. Say you wanted to write a little bit about your project before you posted the rest of the images. You describe how you toiled, sweated, *bled* for your project, and then.... you reveal it's glory in the next row of images.
+Below mentioned are a collection of modules, each of which would be discussed breifly later:
+* Spell Correction
+* Query Rewrite
+* Intent Detection
+* Academic Entity Recognition
 
 
-<div class="img_row">
-    <img class="col two left" src="{{ site.baseurl }}/assets/img/6.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/11.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### Spell Correction
+Our spell correction solution based out of use of distribution of unigrams and bigrams in education corpus. We use the [SymSpell](https://github.com/wolfgarbe/SymSpell) to build our spell correction. [Peter Norvig's blog](https://norvig.com/spell-correct.html) is a great resource on how we are using these n-grams.
+
+### Query Rewrite
+Query Rewrite module is responsible for altering user query to solve vocabulary mismatch problem. This solution is based out of static config, where we group the changes into:
+    * abbreviations (shm → simple harmonic motion)
+    * synonyms (class 8 → 8th Foundation)
+    * chemical compound to their names (k2cr2o7 → potassium dichromate)
+    * common misspells (jee mains → jee main)
+
+### Intent Detection
+At Embibe, students visit the homepage and are presented with the option to search for anything “academic”. This could be from the chapter they missed in school and what to learn about it, or to practice the mathematical problems about trigonometry, to getting the latest news about upcoming competitive exams. These are called search query intent. We can categorize these search queries mainly into 3 intent;
+    * LEARN : These search queries imply that a student wants to learn a topic. These topics could include exam, chapter, unit, subject, etc. 
+        - “ learn matrices ”
+        - “ newtons law of motion”
+    * EXAMINE: These search queries imply that a student wants to examine their knowledge on a topic. These could be in the form of taking tests or practice problem.
+        - “Practice problems on inorganic chemistry”
+        - “Sums on integration”
+    * INFO: These search queries imply that a student wants to read articles on a topic. These could be in the form of articles on cutoff, tips and tricks, latest news, etc.
+        - “Mathematics tips and tricks”
+        - “Latest news on railway exam on 2019” 
 
 
-<br/><br/>
+We used AWD-LSTM based language, which is pre-trained on Education Corpus(Books, Questions, Wikipedia). This helps use learn a good representation for academic entities. This learnt representation could be used not only for Intent Detection but also for *Query Expansion* , *Academic Entity Recognition* etc.   
+
+### Academic Entity Recognition
+Academic Entity Recognition is a NER task. At Embibe,these entities could belong to either exam, subject, units, chapters, concepts, date. These entities can later be used to refine search space. We use a hybrid solution of Regex Based tagger & ML based tagger. We follow a similar solution to [Expedia](https://www.semanticscholar.org/paper/Named-Entity-Recognition-in-Travel-Related-Search-Cowan-Zethelius/2da40f5dda818aea7cca17affa976735c0452cb6) but instead of using CRF, we use our pretrained language model and fine tune it on search queries at academic entity detection task.
 
 
-The code is simple. Just add a col class to your image, and another class specifying the width: one, two, or three columns wide. Here's the code for the last row of images above:
+Feel free to reach out to me for any questions.
 
-<div class="img_row">
-    <img class="col two left" src="/img/6.jpg"/>
-    <img class="col one left" src="/img/11.jpg"/>
-</div>
+
+

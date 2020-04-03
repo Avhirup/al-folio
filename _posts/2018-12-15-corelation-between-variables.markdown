@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  Relation among variables
-date:   2015-03-15 16:40:16
-description: association among different types of variables
+title:  Understanding Correlation amongst variables
+date:   2018-12-15 16:40:16
+description: Understanding Correlation amongst variables from numberical, categorical to ordinal variables
 published: true
+comments: true
 ---
 Association between variables serve to help exploit predictive properties.These **associations/dependence** help us in finding relevant features,finding highly corelated variables etc. Random variables could be classified into continous(interval & ratio) or categorical(nominal & oridinal).This [link](https://www.spss-tutorials.com/measurement-levels/#ordinal-variable) talks more about it.  
 

@@ -3,6 +3,7 @@ layout: page
 title: Life Insurance Underwriting
 description: Automating policy applications using Deep learning.
 img: /assets/img/12.jpg
+published: false
 ---
 
 
