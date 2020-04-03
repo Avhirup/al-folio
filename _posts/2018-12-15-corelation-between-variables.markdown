@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Understanding Correlation amongst variables
+title:  Understanding Correlation
 date:   2018-12-15 16:40:16
-description: Understanding Correlation amongst variables from numberical, categorical to ordinal variables
+description: Understanding correlation amongst different types variables from numberical, categorical to ordinal variables
 published: true
 comments: true
 ---
