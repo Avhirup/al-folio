@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Query Understanding
-description: 
+description: Query Understanding for Embibe
 img: 
 published: true
-
+categories: [search]
+tags: [elasticsearch, nlp, query understanding]
 ---
 
 **Query understanding** is the process of inferring the intent of a user by extracting semantic meaning from the searcher’s keywords. At Embibe, students use search to either learn a new topic, examine their skills about a topic or find articles related to a topic. To serve students better, we classify their intent to LEARN, EXAMINE, or INFO. We also find entities from their query to refine our search space.
