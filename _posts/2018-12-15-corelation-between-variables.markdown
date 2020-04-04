@@ -5,6 +5,8 @@ date:   2018-12-15 16:40:16
 description: Understanding correlation amongst different types variables from numberical, categorical to ordinal variables
 published: true
 comments: true
+categories: [machine learning, data science, statistics]
+tags: [data science, statistics]
 ---
 Association between variables serve to help exploit predictive properties.These **associations/dependence** help us in finding relevant features,finding highly corelated variables etc. Random variables could be classified into continous(interval & ratio) or categorical(nominal & oridinal).This [link](https://www.spss-tutorials.com/measurement-levels/#ordinal-variable) talks more about it.  
 
