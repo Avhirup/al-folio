@@ -32,7 +32,7 @@ The task is to learn joint embedding for user and item. The paper treats it as a
 The proximity score between the user and item pair (i,j) is computed as a dot product $$ s_{ij} = u_i\.\f(x_j) $$. The objective is to rank user's interest articles higher than those he/she is not interested in.
 The score difference between positive and negative items is maximized, leading to the pairwise ranking loss function as :
 <div class="img_row">
-    <img src="{{ site.baseurl }}/assets/img/joint-text-embedding-for-personalised-content-based-recommendation/loss.jpg" width="220" height="60">
+    <img class="col two last" src="{{ site.baseurl }}/assets/img/joint-text-embedding-for-personalised-content-based-recommendation/loss.jpg" width="220" height="60">
 </div>
 Each triplet is drawn from some predefined data distribution and $$ \sigma $$ is sigmoid function.
 
