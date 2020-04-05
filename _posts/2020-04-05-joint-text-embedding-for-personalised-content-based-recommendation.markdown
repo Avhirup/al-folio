@@ -29,7 +29,7 @@ The task is to learn joint embedding for user and item. The paper treats it as a
 </div>
 
 
-The proximity score between the user and item pair (i,j) is computed as a dot product $$ s_{ij} = u_i\.\f(x_j) $$. The objective is to rank user's interest articles higher than those he/she is not interested in.
+The proximity score between the user and item pair (i,j) is computed as a dot product $$ s_{ij} = u_i \f(x_j) $$. The objective is to rank user's interest articles higher than those he/she is not interested in.
 The score difference between positive and negative items is maximized, leading to the pairwise ranking loss function as <br>
 $$ \mathcal{L}=\mathbb{E}_{(i, p, n) \sim \mathcal{D}}\left[-\log \sigma\left(s_{i,p}-s_{i,n}\right)\right] $$
 Each triplet is drawn from some predefined data distribution and $$ \sigma $$ is sigmoid function.
