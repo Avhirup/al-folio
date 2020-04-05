@@ -2,7 +2,7 @@
 layout: post
 title: Joint Text Embedding for Personalised Content-based Recommendation
 date: 2020-04-05 16:12:00-0400
-description: This paper tackles the problem of content-based recommendation for completely new texts
+description: Learning user and text embedding for **personalised recommendation of new textual items**. Embedding are learnt by treating the problem as a **ranking problem** and increasing the proximity score for each positive user-item pair and vice-versa for negative user-item pair. Item are embedded using their associated text. Text embedding are also learnt during the learning to rank process. To tackle the problem of unseen text and reduce overfitting,an **unsupervised pretrained text embedding component** is added to text embedding module.
 published: true
 ---
 
