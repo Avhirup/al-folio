@@ -25,14 +25,14 @@ Personalised recommendation for completely new items with text information avail
 The task is to learn joint embedding for user and item. The paper treats it as a ranking problem where item which is more likely to be clicked/liked needs to be ranked higher. During this process of learning to rank,we learn both user as well as the text embedding.
 
 <div class="img_row">
-    <img class="col one last" src="{{ site.baseurl }}/assets/img/joint-text-embedding-for-personalised-content-based-recommendation/approach.jpg" width="719" height="308">
+    <img class="col three" src="{{ site.baseurl }}/assets/img/joint-text-embedding-for-personalised-content-based-recommendation/approach.jpg" width="719" height="308">
 </div>
 
 
 The proximity score between the user and item pair (i,j) is computed as a dot product $$ s_{ij} = u_i\.\f(x_j) $$. The objective is to rank user's interest articles higher than those he/she is not interested in.
 The score difference between positive and negative items is maximized, leading to the pairwise ranking loss function as :
 <div class="img_row">
-    <img class="col one last" src="{{ site.baseurl }}/assets/img/joint-text-embedding-for-personalised-content-based-recommendation/loss.jpg" width="220" height="60">
+    <img class="col three" src="{{ site.baseurl }}/assets/img/joint-text-embedding-for-personalised-content-based-recommendation/loss.jpg" width="220" height="60">
 </div>
 Each triplet is drawn from some predefined data distribution and $$ \sigma $$ is sigmoid function.
 
@@ -48,5 +48,5 @@ h1 and h2 are combined using a single layer NN.
 For evaluation MAP (Mean Average Precision) and average AUC used. Below are the results on different datasets.
 
 <div class="img_row">
-    <img class="col one last" src="{{ site.baseurl }}/assets/img/joint-text-embedding-for-personalised-content-based-recommendation/evaluation.jpg" width="732" height="300">
+    <img class="col three" src="{{ site.baseurl }}/assets/img/joint-text-embedding-for-personalised-content-based-recommendation/evaluation.jpg" width="732" height="300">
 </div>
