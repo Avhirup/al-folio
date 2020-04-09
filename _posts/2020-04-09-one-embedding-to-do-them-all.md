@@ -28,7 +28,7 @@ A seperate embedding technique is used for different data source. A weighted sum
 * Clicked-Purchased Product Similarity
 * Cart Return Prediction
 <div class="img_row">
-    <img class="col three" src="{{ site.baseurl }}/assets/img/one-embedding-to-do-them-all/various_techniques.png" width="719" height="308">
+    <img class="col two" src="{{ site.baseurl }}/assets/img/one-embedding-to-do-them-all/various_techniques.png" >
 </div>
 Below mentioned are couple of techniques for building embedding:
 * Bayesian Personalised Ranking - MF (ClickStream)
@@ -36,7 +36,8 @@ Below mentioned are couple of techniques for building embedding:
 	$$ x_{u, p}=\alpha+\beta_{u}+\beta_{p}+\gamma_{u}^{T} \gamma_{p} $$
 	$$ \sum_{\vee(u, i, j)} \log \left(\sigma\left(x_{u, i}-x_{u, j}\right)\right)-\lambda_{\theta}\|\theta\|^{2} $$
 * Denoising AutoEncoder  (Side Information)
-	* We train a Denoising AutoEncoder for a pure content- based recommendation setting. All side information of products is one hot encoded and fed into a denoising autoencoder. Denoising AutoEncoder minimizes the reconstruction error between corrupted input and reconstructed input,as follows $$
+	* We train a Denoising AutoEncoder for a pure content- based recommendation setting. All side information of products is one hot encoded and fed into a denoising autoencoder. Denoising AutoEncoder minimizes the reconstruction error between corrupted input and reconstructed input,as follows 
+	$$
 J(\theta)=\frac{1}{2|P|} \sum_{i=1}^{i=|P|}\left\|x_{i}-\operatorname{Dec}\left(\operatorname{Enc}\left(x_{i \operatorname{corr}}\right)\right)\right\|^{2}
 $$
 * Image Embeddings 
@@ -46,5 +47,5 @@ $$
 
 ### Results 
 <div class="img_row">
-    <img class="col three" src="{{ site.baseurl }}/assets/img/one-embedding-to-do-them-all/Results.png" width="719" height="308">
+    <img class="col three" src="{{ site.baseurl }}/assets/img/one-embedding-to-do-them-all/results.png" width="719" height="308">
 </div>
