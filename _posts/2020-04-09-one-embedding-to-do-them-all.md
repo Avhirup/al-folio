@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One Embedding to do them all
-date: 2020-04-05 16:12:00-0400
+date: 2020-04-09 16:12:00-0400
 description: A framework to combine multi datasources to a unified embedding for products on e-commerce. These datasource could include catalog text data, user click stream data or product images.
 published: true
 tags: [paper summary]
