@@ -3,8 +3,8 @@ layout: post
 title: Important Questions about ML Algorithms for Interview
 date: 2020-05-01 16:12:00-0400
 description: Important questions about ML Algorithms
-tags:[interview prep]
 published: true
+tags:[interview prep]
 ---
 
 Following posts list down questions I encountered while studying, discussing doubts with friends or interviewing for companies. 
