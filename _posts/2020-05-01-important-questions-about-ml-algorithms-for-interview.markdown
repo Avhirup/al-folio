@@ -2,8 +2,8 @@
 layout: post
 title: Important Questions about ML Algorithms for Interview
 date: 2020-05-01 16:12:00-0400
-description: Important StackOverflow questions about ML Algorithms
-tags:[interview-prep]
+description: Important questions about ML Algorithms
+tags:[interview prep]
 published: true
 ---
 
