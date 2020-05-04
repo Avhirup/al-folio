@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Important Questions about ML Algorithms for Interview
-date:   2020-04-01 16:40:16
+date:   2020-05-01 16:40:16
 description: This blog posts lists interview questions often asked during machine learning interviews.
 published: true
 ---
