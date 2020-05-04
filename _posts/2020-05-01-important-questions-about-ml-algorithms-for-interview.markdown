@@ -7,7 +7,7 @@ published: true
 tags:[interview prep]
 ---
 
-Following posts list down questions I encountered while studying, discussing doubts with friends or interviewing for companies. 
+Following posts list down questions I encountered while studying, discussing doubts with friends or interviewing for companies
 
 ### Linear Regression
 
