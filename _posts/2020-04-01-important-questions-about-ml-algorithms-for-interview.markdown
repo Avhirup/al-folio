@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  My 4 Months off Whatsapp
+title:  Important Questions about ML Algorithms for Interview
 date:   2020-04-01 16:40:16
-description: Going off Whatsapp
+description: This blog posts lists interview questions often asked during machine learning interviews.
 published: true
 ---
 
